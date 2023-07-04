@@ -2,7 +2,7 @@
   --maincolor: #4d5ae5;
   --accentcolor: #2e2f42;
   --textcolor: #434455;
-  --secondbackgoundcolor: #e5e5e5; 
+  --secondbackgoundcolor: #e5e5e5;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -10,9 +10,59 @@ body {
   background-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
 /* HEADER */
 .nav .list {
   list-style: none;
+}
+
+ .header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: 115px;
+  padding-right: 24px;
+  padding-top: 24px;
+}
+ .header-menu {
+  display: inline-flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding-left: 347px;
+  padding-top: 24px;
+}
+.header-address, .header-address-list {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-end;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-content: flex-end;
 }
 .header-logo,
 .header-logo-accent {
@@ -58,7 +108,6 @@ link {
 .header-address {
   font-style: normal;
 }
-
 
 .header-address-link {
   list-style: none;
@@ -193,7 +242,7 @@ link {
 /* section */
 
 .section-portfolio {
-  background-color: var(--secondbackgoundcolor);
+  background-color: #ffffff;
 }
 
 .header-address-link link {
@@ -229,7 +278,7 @@ link {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  background-color: #f4f4fd;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
