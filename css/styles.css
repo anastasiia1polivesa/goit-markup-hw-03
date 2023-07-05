@@ -39,7 +39,11 @@ ol {
 .nav .list {
   list-style: none;
 }
-
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
  .header-logo {
   display: flex;
   align-items: center;
@@ -49,20 +53,19 @@ ol {
   padding-top: 24px;
 }
  .header-menu {
-  display: inline-flex;
+  display: flex;
   gap: 40px;
-  align-items: flex-start;
+  
   padding-left: 347px;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
-.header-address, .header-address-list {
+ .header-address-list {
   display: inline-flex;
   flex-direction: row;
   gap: 40px;
-  align-items: flex-end;
   padding-top: 24px;
   padding-bottom: 24px;
-  align-content: flex-end;
 }
 .header-logo,
 .header-logo-accent {
