@@ -45,6 +45,9 @@ img {
   gap: 40px;
   padding: 24px 0;
 }
+.nav {
+  align-items: center;
+}
 .header-container {
   display: flex;
   flex-direction: row;
@@ -127,7 +130,9 @@ link {
   color: var(--textcolor);
   text-decoration: none;
 }
-
+.header-address-list {
+  gap: 40px;
+}
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
@@ -139,8 +144,7 @@ link {
   background-color: var(--accentcolor);
   padding: 188px 0;
 }
-.title-container {
-}
+
 .section-title {
   font-size: 56px;
   line-height: 1.07;
@@ -180,9 +184,6 @@ link {
   cursor: pointer;
 }
 
-.title-container {
-  height: 600px;
-}
 /* section 2 */
 
 .priorities-section {
@@ -196,7 +197,9 @@ link {
   gap: 24px;
   margin-left: 156px;
 }
-
+.priorities-sectionul {
+  gap: 24px;
+}
 .visually-hidden {
   overflow: hidden;
   position: absolute;
@@ -234,7 +237,7 @@ link {
 .do-section .list {
   list-style: none;
 }
-.do-sectionul {
+.do-sectionul.list {
   display: flex;
   gap: 24px;
   padding-left: 156px;
@@ -273,25 +276,26 @@ link {
   color: var(--accentcolor);
 }
 
-.team-photo {
+.team-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
-.team-section-card .list {
-  display: flex;
-  width: calc((100% - 72px)/4);
+.team-section-card {
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  
+  background-color: #ffffff;
+  width: 264px;
 }
 
 .name {
   padding: 32px 16px;
   width: 264px;
-  background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  gap: 8px;
 }
 
 .worker-name {
@@ -310,9 +314,8 @@ link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 0px;
-  gap: 32px;
   margin-bottom: 32px;
+  margin-top: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 /* footer */
@@ -322,7 +325,6 @@ link {
   padding: 100px 0;
 }
 .footer-container {
-  height: 312px;
   padding-left: 156px;
 }
 .footeer-logo {
@@ -357,6 +359,8 @@ link {
   background-color: #ffffff;
   padding-top: 96px;
   padding-bottom: 120px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .header-address-link link {
@@ -393,17 +397,14 @@ link {
   cursor: pointer;
 }
 
-.button-container {
-  height: 48px;
-  width: calc(100%-24px) / 5;
-}
-
 .button-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-top: 96px;
   margin-bottom: 72px;
+  height: 48px;
+  width: calc(100%-24px) / 5;
 }
 .button-look {
   margin: 0 auto;
