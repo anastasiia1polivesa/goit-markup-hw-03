@@ -59,7 +59,6 @@ img {
   flex-shrink: 0;
   padding-left: 115px;
   padding: 24px 0;
-  box-sizing: border-box;
   margin-right: 76px;
 }
 .header-menu {
@@ -67,14 +66,13 @@ img {
   gap: 40px;
   margin: 0 auto;
   align-items: center;
+  padding: 24px 0;
 }
 .header-address-list {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  box-sizing: border-box;
+  padding: 24px 0;
 }
 .header-logo,
 .header-logo-accent {
@@ -139,6 +137,7 @@ link {
 
 .section {
   background-color: var(--accentcolor);
+  padding: 188px 0;
 }
 .title-container {
 }
@@ -191,7 +190,7 @@ link {
   display: flex;
   gap: 24px;
   margin-left: 156px;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -214,6 +213,7 @@ link {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 .priorities-section-text {
@@ -234,28 +234,25 @@ link {
 .do-section .list {
   list-style: none;
 }
-.do-section {
+.do-section .list {
   display: flex;
   gap: 24px;
   padding-left: 156px;
   padding-bottom: 120px;
   justify-content: center;
-  max-width: 1158px;
-  width: calc((100%-48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 .do-section-title {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--accentcolor);
-  justify-content: center;
+  text-align: center;
   margin-bottom: 72px;
 }
 
 .do-container {
-  width: 1128px;
   padding-bottom: 120px;
 }
 
@@ -274,38 +271,26 @@ link {
 .team-section {
   list-style: none;
   background-color: #f4f4fd;
-}
-.team-container {
   padding: 120px 0;
-  
 }
+
 .team-section-photo .list {
-  background-color: #ffffff;
-  list-style: none;
-  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  gap: 24px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 120px;
-  width: calc((100%-72px) / 4);
-
+  padding-bottom: 0px;
+  flex-direction: column;  
 }
+.team-section-card .list {
+  width: calc((100% - 72px)/4);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .name-container {
   padding: 32px 16px;
-  text-align: center;
-}
-.team-container-list {
-  display: flex;
-  align-content: center;
-  gap: 24px;
-  margin-left: 156px;
-
-  flex-wrap: wrap;
 }
 .headline {
   font-weight: 500;
@@ -315,6 +300,7 @@ link {
   color: var(--accentcolor);
   margin-bottom: 8px;
   margin-top: 32px;
+  text-align: center;
 }
 .text {
   font-size: 16px;
@@ -325,20 +311,21 @@ link {
   gap: 32px;
   margin-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--accentcolor);
+  padding: 100px 0;
 }
 .footer-container {
   height: 312px;
-  padding: 100px 0;
   padding-left: 156px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+}
+.footeer-logo {
+  display: inline-block;
 }
 .footer-text {
   line-height: 1.5;
@@ -351,6 +338,19 @@ link {
 /* portfolio */
 
 /* section */
+
+.visually-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
 
 .section-portfolio {
   background-color: #ffffff;
@@ -371,9 +371,7 @@ link {
   text-decoration: none;
   list-style-type: none;
 }
-.visually-hidden {
-  overflow: hidden;
-}
+
 
 .button-list .list {
   list-style: none;
@@ -405,6 +403,7 @@ link {
   gap: 24px;
   justify-content: center;
   margin-top: 96px;
+  margin-bottom: 72px;
 }
 .button-look {
   margin: 0 auto;
@@ -420,27 +419,34 @@ link {
   background-color: #404bbf;
   border: 1px solid transparent;
 }
-.work .list {
+.work, .list {
+  display: flex;
   flex-wrap: wrap;
-  
   list-style-type: none;
   text-decoration: none;
- 
+  column-gap: 24px; 
+  row-gap: 48px;
+  
 }
 .img .link {
   text-decoration: none;
 }
 .img {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px)/3);
+  
+}
+.app-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
+  margin-bottom: 8px;
+
 }
 .container-set {
-  width: 1128px; 
+  width: 1128px;
   margin-bottom: 72px;
   margin-top: 72px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  
 }
 .portfolio-headline {
   font-weight: 500;
