@@ -75,8 +75,11 @@ img {
 .header-address-list .list {
   display: flex;
   flex-direction: row;
-  gap: 40px;
   padding: 24px 0;
+  margin-right: 40px;
+}
+.header-address-link .list:last-child {
+  margin-right: 0;
 }
 .header-logo,
 .header-logo-accent {
@@ -108,7 +111,8 @@ link {
   list-style: none;
 }
 .header-menu-item {
-  list-style-type: none;  
+  list-style-type: none; 
+
 }
 
 .header-menu-link {
@@ -118,6 +122,7 @@ link {
   letter-spacing: 0.02em;
   color: var(--accentcolor);
   text-decoration: none;
+  padding: 24px 0; 
 }
 .header-address-list {
   gap: 40px;
@@ -196,11 +201,11 @@ link {
 .priorities-sectionul .list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  margin-right: 24px;
   margin-left: 156px;
 }
-.priorities-sectionul, .list {
-  gap: 24px;
+.priorities-sectionul, .list:last-child {
+  margin-right: 0;
 }
 .visually-hidden {
   overflow: hidden;
@@ -258,7 +263,7 @@ link {
   padding: 120px 0;
 }
 .section-ul {
-  width: calc((100% - 3 * 16px) / 3);
+  width: calc((100% - 3*16px)/3);
 }
 /* section 4 */
 
@@ -283,7 +288,7 @@ link {
   gap: 24px;
   justify-content: center;
 }
-.team-section-card .list {
+.team-section-card {
 width: calc((100% - 72px)/4);
 }
 .team-section-card {
