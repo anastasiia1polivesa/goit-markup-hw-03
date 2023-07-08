@@ -242,7 +242,6 @@ link {
 .do-sectionul.list {
   display: flex;
   gap: 24px;
-  padding-left: 156px;
   justify-content: center;
 }
 .do-section-title {
