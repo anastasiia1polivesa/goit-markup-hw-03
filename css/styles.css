@@ -257,8 +257,8 @@ link {
 .do-section {
   padding: 120px 0;
 }
-.section-ul {
-  flex-basis: calc((100% - 48px) / 3);
+.doing-photo {
+  width: calc((100% - 48px) / 3);
 }
 /* section 4 */
 
