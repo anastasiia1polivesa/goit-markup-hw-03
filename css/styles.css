@@ -289,11 +289,11 @@ link {
   justify-content: center;
 }
 .team-section-card {
-  width: 264px;
+   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .team-section-card {
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
+ 
   width: calc((100% - 72px) / 4);
 }
 
