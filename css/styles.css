@@ -258,7 +258,7 @@ link {
   padding: 120px 0;
 }
 .section-ul {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 /* section 4 */
 
