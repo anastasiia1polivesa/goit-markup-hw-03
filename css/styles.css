@@ -75,9 +75,10 @@ img {
 .header-address-list .list {
   display: flex;
   padding: 24px 0;
+}
+.header-address-list {
   gap: 40px;
 }
-
 .header-logo,
 .header-logo-accent {
   font-family: "Raleway", sans-serif;
@@ -198,15 +199,9 @@ link {
   display: flex;
   margin-right: 24px;
   margin-left: 156px;
-  
-}
-.priorities-sectionul .list{
   gap: 24px;
 }
-.priorities-sectionul,
-.list:last-child {
-  margin-right: 0;
-}
+
 .visually-hidden {
   overflow: hidden;
   position: absolute;
@@ -285,8 +280,10 @@ link {
 
 .team-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+}
+.team-list {
+  gap: 24px;
 }
 .team-section-card {
    border-radius: 0px 0px 4px 4px;
@@ -365,12 +362,10 @@ link {
 .section-portfolio {
   background-color: #ffffff;
   padding-left: 156px;
-  padding-right: 156px;
-}
-.section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
+
 .header-address-link link {
   text-decoration: none;
   list-style: none;
@@ -404,7 +399,7 @@ link {
   background-color: #ffffff;
   cursor: pointer;
 }
-.button-list .list {
+.button-list {
   gap: 24px;
 }
 .button-list {
