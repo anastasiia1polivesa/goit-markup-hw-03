@@ -75,10 +75,9 @@ img {
 .header-address-list .list {
   display: flex;
   padding: 24px 0;
-}
-.header-address-list {
   gap: 40px;
 }
+
 .header-logo,
 .header-logo-accent {
   font-family: "Raleway", sans-serif;
@@ -199,9 +198,10 @@ link {
   display: flex;
   margin-right: 24px;
   margin-left: 156px;
+}
+.list {
   gap: 24px;
 }
-
 .visually-hidden {
   overflow: hidden;
   position: absolute;
@@ -361,7 +361,6 @@ link {
 
 .section-portfolio {
   background-color: #ffffff;
-  padding-left: 156px;
   padding-top: 96px;
   padding-bottom: 120px;
 }
