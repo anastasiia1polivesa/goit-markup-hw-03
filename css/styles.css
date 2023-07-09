@@ -441,6 +441,7 @@ link {
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-accent,
 span {
