@@ -303,6 +303,7 @@ link {
 
 .footeer-logo {
   display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   line-height: 1.5;
