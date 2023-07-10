@@ -233,7 +233,7 @@ link {
   margin-bottom: 72px;
 }
 .do-section {
-  padding: 0;
+  padding-bottom: 120px;
 }
 .doing-photo {
   width: calc((100% - 48px) / 3);
